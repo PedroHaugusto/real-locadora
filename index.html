@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Locadora - Aluguel de Veículos em João Pessoa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <span class="logo-loca">LOCA</span><span class="logo-real">REAL</span><span class="logo-domain">.com.br</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="active">FAÇA UMA COTAÇÃO</a></li>
+                    <li><a href="#vantagens">VANTAGENS</a></li>
+                    <li><a href="#frota">NOSSA FROTA</a></li>
+                    <li><a href="#dicas">DICAS</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="logo-hero">
+                <svg viewBox="0 0 200 100" class="logo-svg">
+                    <path d="M 20,50 Q 20,20 50,20 L 150,20 Q 180,20 180,50" stroke="#2c3e7d" stroke-width="2" fill="none"/>
+                    <text x="50" y="65" font-size="40" font-weight="bold" fill="#2c3e7d">REAL</text>
+                    <text x="35" y="85" font-size="12" fill="#2c3e7d">LOCADORA DE VEÍCULOS</text>
+                </svg>
+            </div>
+            <h1>Faça a sua cotação com a melhor locadora de veículos de João Pessoa e pelo melhor preço do mercado!</h1>
+        </div>
+    </section>
+
+    <!-- Reservas Section -->
+    <section id="reservas" class="reservas">
+        <div class="container">
+            <h2>Faça sua Reserva</h2>
+            <form class="reserva-form" id="reservaForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="localRetirada">LOCAL DA RETIRADA</label>
+                        <input type="text" id="localRetirada" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dataRetirada">DATA DA RETIRADA</label>
+                        <input type="date" id="dataRetirada" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="horarioRetirada">HORÁRIO</label>
+                        <input type="time" id="horarioRetirada" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="localDevolucao">LOCAL DA DEVOLUÇÃO</label>
+                        <input type="text" id="localDevolucao" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dataDevolucao">DATA DA DEVOLUÇÃO</label>
+                        <input type="date" id="dataDevolucao" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="horarioDevolucao">HORÁRIO</label>
+                        <input type="time" id="horarioDevolucao" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="veiculo">VEÍCULO DESEJADO</label>
+                        <select id="veiculo">
+                            <option value="">Selecione</option>
+                            <option value="economico">Econômico</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">SUV</option>
+                            <option value="executivo">Executivo</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>OPCIONAIS</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" id="cadeirinha"> CADEIRINHA</label>
+                            <label><input type="checkbox" id="condutorAdicional"> CONDUTOR ADICIONAL</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit">CONTINUAR</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Vantagens Section -->
+    <section id="vantagens" class="vantagens">
+        <div class="container">
+            <div class="vantagens-grid">
+                <div class="vantagem-card">
+                    <div class="icon">✓</div>
+                    <h3>GARANTIA DE QUALIDADE</h3>
+                    <p>Os nossos veículos são limpos, bem cuidados, novos e renovados!</p>
+                </div>
+                <div class="vantagem-card">
+                    <div class="icon">★</div>
+                    <h3>ATENDIMENTO VIP</h3>
+                    <p>Equipe experiente e preparada para prestar o melhor atendimento a você!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frota Section -->
+    <section id="frota" class="frota">
+        <div class="container">
+            <h2>NOSSA FROTA</h2>
+            <div class="frota-grid">
+                <div class="carro-card">
+                    <div class="carro-img" style="background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);">🚗</div>
+                    <h3>MOBI</h3>
+                </div>
+                <div class="carro-card">
+                    <div class="carro-img" style="background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);">🚗</div>
+                    <h3>POLO</h3>
+                </div>
+                <div class="carro-card">
+                    <div class="carro-img" style="background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);">🚗</div>
+                    <h3>CRONOS</h3>
+                </div>
+                <div class="carro-card">
+                    <div class="carro-img" style="background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);">🚙</div>
+                    <h3>RENEGADE</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dicas Section -->
+    <section id="dicas" class="dicas">
+        <div class="container">
+            <div class="dicas-grid">
+                <div class="dica-card">
+                    <h3>Segurança para Criança</h3>
+                    <p>Se estiver viajando com crianças, solicite cadeirinhas de acordo com a idade.</p>
+                </div>
+                <div class="dica-card">
+                    <h3>Condutor Adicional</h3>
+                    <p>Cadastre todos os motoristas que vão dirigir o veículo locado sem nenhum custo adicional.</p>
+                </div>
+                <div class="dica-card">
+                    <div class="dica-icon">💡</div>
+                    <h3>Comodidade</h3>
+                    <p>Levamos e buscamos o veículo no local onde você estiver. Consulte tarifa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>FALE CONOSCO</h2>
+            <div class="contato-content">
+                <div class="contato-form">
+                    <form id="contatoForm">
+                        <input type="text" placeholder="Nome" required>
+                        <div class="form-row">
+                            <input type="email" placeholder="Email" required>
+                            <input type="tel" placeholder="Telefone" required>
+                        </div>
+                        <textarea placeholder="Digite a sua mensagem" rows="5" required></textarea>
+                        <button type="submit" class="btn-enviar">ENVIAR</button>
+                    </form>
+                </div>
+                <div class="contato-info">
+                    <p>Entre em contato ligando para o número</p>
+                    <div class="info-item">
+                        <span>📞</span> Telefone: (83) 99412-9911
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Real Locadora. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5583994129911?text=Olá,%20vim%20do%20site%20da%20Real%20Locadora%20e%20quero%20mais%20informações" class="whatsapp-float" target="_blank">
+        <svg viewBox="0 0 32 32" width="40" height="40">
+            <path fill="#fff" d="M16 0C7.164 0 0 7.164 0 16c0 2.848.748 5.52 2.058 7.848L0 32l8.348-2.042A15.923 15.923 0 0 0 16 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.333c-2.502 0-4.87-.69-6.884-1.89l-.494-.296-5.122 1.252 1.29-4.986-.324-.514A13.257 13.257 0 0 1 2.667 16c0-7.364 5.97-13.333 13.333-13.333S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.304-9.748c-.4-.2-2.366-1.168-2.732-1.3-.368-.134-.636-.2-.904.2-.268.398-1.036 1.3-1.27 1.568-.236.268-.47.302-.87.1-.4-.2-1.688-.622-3.216-1.984-1.188-1.06-1.99-2.368-2.224-2.768-.234-.4-.026-.616.176-.816.18-.18.4-.47.6-.704.2-.234.268-.4.402-.668.134-.268.068-.502-.034-.704-.1-.2-.904-2.178-1.238-2.982-.326-.782-.656-.676-.904-.69-.234-.012-.502-.014-.77-.014s-.704.1-1.072.502c-.368.4-1.404 1.372-1.404 3.346s1.438 3.882 1.638 4.15c.2.268 2.832 4.324 6.862 6.066.958.414 1.706.662 2.29.848.962.306 1.836.262 2.528.16.77-.116 2.366-.968 2.7-1.902.334-.934.334-1.736.234-1.902-.1-.166-.368-.268-.77-.47z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

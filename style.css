@@ -323,20 +323,50 @@ body {
 
 /* Dicas Section */
 .dicas {
-    padding: 4rem 0;
+    padding: 5rem 0;
     background: linear-gradient(135deg, #1e2a5e 0%, #2c3e7d 100%);
+}
+
+.dicas h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--white);
+    position: relative;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.dicas h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--primary-color);
 }
 
 .dicas-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .dica-card {
+    background: rgba(255, 255, 255, 0.05);
     padding: 2rem;
+    border-radius: 5px;
     text-align: center;
     color: var(--white);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.dica-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .dica-icon {
@@ -347,13 +377,14 @@ body {
 .dica-card h3 {
     color: var(--white);
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
 .dica-card p {
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 /* Contato Section */
